@@ -21,7 +21,7 @@ def afficher_classement(db):
     print("\n=== Classement des meillieurs Scores ===")
     top_scores = db.scores.find().sort("points", -1).limit(3)
     for i, score in enumerate(top_scores):
-        print(f"{i+1}. {score['joueur']} - Points: {score['points']}")
+        print(f"{i+1}. {score['joueur']} - {score['points']} vagues")
         print("=========================")
 
 

@@ -17,7 +17,7 @@ def start_game(equipe):
             "defense": monstres_data['defense'],
             "pv": monstres_data['pv']
         }
-        print("\n Attention un {monstre['nom]} apparaît ! Brandissez vos armes !") 
+        print(f"\n Attention un {monstres_data['nom']} apparaît ! Brandissez vos armes !") 
                         
         while monstres['pv'] > 0 and any(perso['pv'] > 0 for perso in equipe_active):
             print("\n=== Tour des combatants ===")

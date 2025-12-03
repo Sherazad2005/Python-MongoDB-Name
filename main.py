@@ -1,11 +1,7 @@
 from pymongo import MongoClient
-from utils import afficher_personnages, afficher_equipe, afficher_classementment, choisir_personnages
+from utils import afficher_personnages, afficher_equipe, afficher_classement, choisir_personnages
 import game
 from config.db import db
-
-
-client = MongoClient("mongodb://localhost:27017")
-db = client["jeux_video"]
 
 def main():
     print("Bienvenue dans le jeu de combat !")
@@ -30,8 +26,7 @@ def main():
             db.scores.insert_one({"joueur": nom_joueur, "points": vagues
             })
         elif choix == '2':
-            scores = list(db.scores.find().sort("points", -1))
-            afficher_classementment(scores)
+            afficher_classement(db)
         elif choix == '3':
             print("Merci d'avoir joué ! Au revoir.")
             break
@@ -40,6 +35,4 @@ def main():
 
 main()
 
-personnages = list(db.personnages.find())
-equipe = choisir_personnages(personnages, [])
-afficher_equipe(equipe) 
+
