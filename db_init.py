@@ -1,8 +1,5 @@
 from pymongo import MongoClient
-
-client = MongoClient("mongodb://localhost:27017")
-db = client["jeux_video"]
-# Création des collections
+from config.db import db
 
 # Suppression des anciennes données
 db.personnages.drop()

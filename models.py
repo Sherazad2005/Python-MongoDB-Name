@@ -1,4 +1,6 @@
 import random
+from config.db import db
+
 
 class Personnage:
     def __init__(self, nom, atk, defense, pv):

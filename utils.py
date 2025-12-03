@@ -1,4 +1,6 @@
 import random
+from config.db import db
+
 
 #fonctions d'affichage et de sélection des personnages et des scores
 def afficher_personnages(liste):

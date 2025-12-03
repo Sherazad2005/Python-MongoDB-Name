@@ -1,6 +1,8 @@
 from pymongo import MongoClient
 from utils import afficher_personnages, afficher_equipe, afficher_classementment, choisir_personnages
 import game
+from config.db import db
+
 
 client = MongoClient("mongodb://localhost:27017")
 db = client["jeux_video"]
