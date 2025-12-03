@@ -17,10 +17,12 @@ def afficher_equipe(equipe):
 
 
 # Afficher le classement des scores
-def afficher_classementment(scores):
-    print("\nClassement des scores :")
-    for score in scores:
-        print(f"Joueur: {score['joueur']}, Points: {score['points']}")
+def afficher_classement(db):
+    print("\n=== Classement des meillieurs Scores ===")
+    top_scores = db.scores.find().sort("points", -1).limit(3)
+    for i, score in enumerate(top_scores):
+        print(f"{i+1}. {score['joueur']} - Points: {score['points']}")
+        print("=========================")
 
 
 # Sélectionner 3 personnages par l'utilisateur
