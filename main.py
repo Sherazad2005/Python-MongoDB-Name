@@ -34,5 +34,7 @@ def main():
             print("Option invalide. Veuillez réessayer.")
 
 main()
+# Point d'entrée principal du programme
+
 
 
