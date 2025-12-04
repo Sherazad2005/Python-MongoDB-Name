@@ -1,0 +1,36 @@
+# Jeu de Combat - RPG Python
+
+## Description
+
+Ce projet est un jeu de combat en console développé en Python.  
+Le joueur compose une équipe de trois personnages et affronte des vagues successives de monstres, chacun possédant des attaques et des techniques spécifiques.  
+
+Le gameplay inclut :
+
+- Attaques normales et spéciales
+- Techniques de soin
+- Gestion des points de vie (PV) et des dégâts
+- Suivi du nombre de vagues vaincues
+- Classement des scores
+
+## Technologies utilisées
+
+- Python 3.12
+- MongoDB (pour stocker les monstres et le classement des scores)
+- Bibliothèque `random` pour les choix aléatoires
+
+## Installation
+
+1. Cloner le dépôt :
+   git clone https://github.com/Sherazad2005/Python-MongoDB-Name.git
+   
+
+2. Se placer dans le dossier du projet :
+    cd Python-MongoDB-Name
+
+3. Installer les dépendances Python (si nécessaire) :
+   Installer les dépendances Python (si nécessaire)
+
+
+
+
